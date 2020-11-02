@@ -50,8 +50,4 @@
     pip:
       name: flask-mysql
     become: true
-  - name: Run flask app in the background
-    shell:
-      cmd: "FLASK_APP=app.py flask run --host=0.0.0.0:5000 &"
-    args:
-      chdir: /tmp/coderepo
+ # Go into /tmp/coderepo of host machine and execute FLASK_APP=app.py flask run --host=0.0.0.0
