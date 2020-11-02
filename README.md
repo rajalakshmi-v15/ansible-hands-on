@@ -1,2 +1,2 @@
 # ansible-hands-on
-Notes and code snippets required for Ansible hands-on sessions organised by IOTA, Sricity.
+Notes and code snippets required for Ansible hands-on session organised by IOTA, Sricity.
