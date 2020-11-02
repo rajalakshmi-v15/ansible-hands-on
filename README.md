@@ -6,13 +6,13 @@ Notes and files required for IOTA Ansible demo.
 Go to Compute Engine (VM instances)
 
 Instance 1:
-name: ansible-controller
-Operating system: Ubuntu 18.04 LTS (Under Boot Disk section)
-Check Allow HTTP traffic (Under Firewall section)
-Network: default
+- name: ansible-controller
+- Operating system: Ubuntu 18.04 LTS (Under Boot Disk section)
+- Check Allow HTTP traffic (Under Firewall section)
+- Network: default
 
 Instance 2: 
-name: ansible-host
+- name: ansible-host
 Rest same as Instance 1 
 
 ### 2. Open port 5000 for both instances
