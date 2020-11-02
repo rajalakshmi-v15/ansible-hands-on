@@ -1,0 +1,29 @@
+---
+- name: Setup a simple python app
+  connection: local
+  gather_facts: false
+  hosts: ansible-host
+  tasks:
+  ## Simple ansible test
+  - name: Write something
+    debug: msg="Hi"
+  ## Installing MySQL server and client.
+  - name: Install MySQL server
+    apt:
+      name: mysql-server
+      state: present
+  - name: Install MySQL Client
+    apt:
+      name: mysql-client-core-5.7
+      state: present
+  - name: Running MySQL server in instance
+    systemd:
+      state: started #1. Change to stopped and see what happens
+      name: mysql
+    become: true #2. Remove this line and check what happens
+  ## Command to test: sudo systemctl status mysql
+  ## Inserting test data
+  #- name: Inserting test data
+  #  shell:
+  #    cmd: mysql mysql < init_db.sql
+  #  become: true
