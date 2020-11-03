@@ -58,6 +58,7 @@ SSH into ansible-controller
 3. Put the copied public key under this section (you should see "ubuntu" on the left side after a short delay)
 
 Now, if you SSH into ansible-controller and do `ssh ansible-host` from there, you should be in the host machine.
+Update: try `ssh <ansible host private IP>` if the above step doesn't work.
 
 ## HOW TO SSH
 Go to Compute Engine (VM instances)
