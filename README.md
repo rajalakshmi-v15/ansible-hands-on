@@ -1,6 +1,10 @@
 # ansible-demo
 Notes and files required for IOTA Ansible demo.
 
+## App source code 
+https://github.com/mmumshad/simple-webapp
+(Somebody had very conveniently created it for Ansible testing!)
+
 ## GCP setup:
 ### 1. Launch two Ubuntu 18.06 virtual machines in GCP.
 Go to Compute Engine (VM instances)
